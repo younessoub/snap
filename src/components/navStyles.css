@@ -1,0 +1,135 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks li {
+  list-style: none;
+  position: relative;
+  margin-right: 30px;
+}
+
+.navEl {
+  display: flex;
+  cursor: pointer;
+
+  align-items: center;
+  color: var(--mediumGray);
+  font-size: 13px;
+}
+
+.navEl a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navEl:hover {
+  color: var(--almostBlack);
+}
+
+.navEl img {
+  margin-left: 5px;
+}
+
+.dropDown {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 61px;
+  box-shadow: 1px 1px 10px var(--mediumGray);
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.2s;
+}
+
+.dropDown a {
+  text-decoration: none;
+  color: var(--mediumGray);
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.dropDown a img {
+  width: 15px;
+  margin-right: 10px;
+}
+
+.login,
+.register {
+  color: var(--mediumGray);
+  background: transparent;
+  height: 40px;
+  width: 80px;
+  font-family: inherit;
+  margin: 0 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.login:hover,
+.register:hover {
+  color: var(--almostBlack);
+}
+
+.register {
+  border: 1px solid var(--mediumGray);
+  border-radius: 10px;
+}
+
+.register:hover {
+  border-color: var(--almostBlack);
+}
+
+.login a,
+.register a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .navButtons {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    right: 10px;
+  }
+}

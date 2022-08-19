@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+:root {
+  --almostWhite: hsl(0, 0%, 98%);
+  --mediumGray: hsl(0, 0%, 41%);
+  --almostBlack: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: "Epilogue", sans-serif;
+  min-height: 100vh;
+  background-color: var(--almostWhite);
+}
+
+main {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainContent {
+  width: 50%;
+  padding: 100px 90px 0 50px;
+}
+
+.mainContent h1 {
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+
+.mainContent p {
+  margin-bottom: 50px;
+  color: var(--mediumGray);
+}
+
+.mainContent button {
+  border-radius: 10px;
+  border: 1px solid var(--almostBlack);
+  background-color: var(--almostBlack);
+  color: white;
+  height: 40px;
+  width: 150px;
+  font-family: inherit;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.mainContent button:hover {
+  background-color: var(--almostWhite);
+  color: var(--almostBlack);
+}
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands img {
+  height: 20px;
+}
+
+.mainImg {
+  background: url("/image-hero-desktop.png");
+  background-size: 80% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+@media screen and (max-width: 980px) {
+  .mainContent {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .mainImg {
+    background: url("/image-hero-mobile.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+  }
+
+  .mainContent {
+    width: 100%;
+    text-align: center;
+    padding: 70px 20px 0 20px;
+  }
+
+  .mainContent h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .brands img {
+    height: 15px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Neutral
+
+- Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
+- Weights: 500, 700
+*/
